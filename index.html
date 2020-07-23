@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charse="UTF-8">
+    <title>Hover effect usingVanila JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class=" container ">
+        <div class="row ">
+            <div class="col-md-6 ">
+                <div class="box " data-tilt>
+                    <div class="imgBx ">
+                        <img src="img1.jpg " alt=" ">
+                    </div>
+                    <div class="contentBx ">
+                        <h2>Hover effect | Vanilla Tilt</h2>
+                        <p>
+                            Love: it's a many-splendored thing, or it's all you need — sometimes it's even a battlefield.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ">
+                <div class="box " data-tilt>
+                    <div class="imgBx ">
+                        <img src="img2.jpg " alt=" ">
+                    </div>
+                    <div class="contentBx ">
+                        <h2>Hover effect | Vanilla Tilt</h2>
+                        <p>
+                            Love: it's a many-splendored thing, or it's all you need — sometimes it's even a battlefield.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="tilt.jquery.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 25,
+                speed: 400
+            });
+        </script>
+    </div>
+
+</html>
